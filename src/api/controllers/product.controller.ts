@@ -7,8 +7,9 @@ import {
     UpdateProductUseCase,
 } from '../../domain/interface/use-cases/index';
 import { ProductRequestModel, ProductResponseModel } from '../../domain/entities/product';
+import { ProductControllerInterface } from '../interface/controllers/product.controler';
 
-export class ProductController {
+export class ProductController implements ProductControllerInterface {
     getAllProductsUseCase: GetAllProductsUseCase;
     createProductUseCase: CreateProductUseCase;
     getOneProductUseCase: GetOneProductUseCase;
